@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class StartButton : MonoBehaviour
 {
     public bool gameStarted;
@@ -8,7 +9,7 @@ public class StartButton : MonoBehaviour
     private Button _button;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         _button = GetComponent<Button>();
         _button.onClick.AddListener(StartGame);

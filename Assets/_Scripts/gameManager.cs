@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+
 using UnityEngine;
 
 public class gameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private StartButton _startButtonScript;
+
+    private void Start()
     {
-        
+       _startButtonScript = GameObject.Find("Start Game Button").GetComponent<StartButton>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (_startButtonScript.gameStarted == true)
+        {
+            Debug.Log("Game Started");
+        }
     }
 }
