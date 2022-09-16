@@ -8,14 +8,12 @@ public class StartButton : MonoBehaviour
 
     private Button _button;
 
-    // Start is called before the first frame update
     public void Start()
     {
         _button = GetComponent<Button>();
         _button.onClick.AddListener(StartGame);
     }
     
-
     private void StartGame()
     {
         gameStarted = true;
