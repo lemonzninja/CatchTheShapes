@@ -13,7 +13,7 @@ public class StartButton : MonoBehaviour
         _button = GetComponent<Button>();
         _button.onClick.AddListener(StartGame);
     }
-    
+
     private void StartGame()
     {
         gameStarted = true;

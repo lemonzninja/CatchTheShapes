@@ -1,5 +1,3 @@
-using System;
-
 using UnityEngine;
 
 public class gameManager : MonoBehaviour
@@ -8,6 +6,7 @@ public class gameManager : MonoBehaviour
     private StartButton _startButtonScript;
     private PlayerController _playerController;
     
+
     // The player Object.
     [SerializeField] private GameObject _playerObject;
     // UI Objects.
@@ -33,4 +32,4 @@ public class gameManager : MonoBehaviour
             _playerController.MovePlayer();
         }
     }
-}   
+}
