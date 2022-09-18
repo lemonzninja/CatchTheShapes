@@ -4,8 +4,6 @@ public class CollectibleSpawner : MonoBehaviour
 {
     private StartButton _startButtonScript;
 
-
-
     [SerializeField] private GameObject[] collectibleObjectsArray;
 
     [SerializeField] private float spawnOnScreenPos;

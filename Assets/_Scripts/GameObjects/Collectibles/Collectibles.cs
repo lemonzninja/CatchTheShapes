@@ -31,7 +31,7 @@ public class Collectibles : MonoBehaviour
         {
             Destroy(gameObject);
 
-            // TODO: Update score in gameManager.
+            _gameManager.AddToScore(pointsValue);
         }
     }
 }
