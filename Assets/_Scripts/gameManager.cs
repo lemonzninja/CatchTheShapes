@@ -29,13 +29,18 @@ public class gameManager : MonoBehaviour
     {
         if (_startButtonScript.gameStarted == true)
         {
+            // Show the Player.
             _playerObject.GetComponent<Renderer>().enabled = true;
 
+            // Show the Reset Button.
             _resetButton.SetActive(true);
+            // Hide the title UI.
             _titleUI.SetActive(false);
 
+            // Alow Player to move.
             _playerController.MovePlayer();
 
+            // Have socre update.
             AddToScore(0);
         }
     }
